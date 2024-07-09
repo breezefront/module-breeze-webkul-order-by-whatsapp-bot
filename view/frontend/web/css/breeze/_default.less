@@ -1,7 +1,10 @@
 & when (@critical) {
+    .breeze .whatsapp-list-button-div,
     .breeze .whatsapp-button-div {
         margin: 0;
         max-width: none !important;
+    }
+    .breeze .whatsapp-button-div {
         .wk_whatsapp {
             line-height: inherit;
             font-size: inherit;
@@ -15,9 +18,26 @@
             align-items: center;
             gap: @1;
         }
-        .wk_whatsapp_icon::before,
-        .wk_whatsapp_icon_page::before {
+        .wk_whatsapp_icon::before {
             font-size: @font-size__xl;
+        }
+    }
+    .breeze .whatsapp-list-button-div {
+        .wk_whatsapp_icon_page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wk_whatsapp_icon_page::before {
+            font-size: 1.55rem;
+            line-height: @listing-item-actions-secondary-icon__height;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .breeze.checkout-cart-index .whatsapp-button-div {
+        .wk_whatsapp_icon::before {
+            font-size: @font-size__2xl;
         }
     }
 }
