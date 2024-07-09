@@ -78,15 +78,6 @@
                     <item name="ui-form" xsi:type="array">
                         <item name="sort_order" xsi:type="number">90</item>
                         <item name="items" xsi:type="array">
-                            <item name="uiForm" xsi:type="array">
-                                <item name="path" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
-                                <item name="import" xsi:type="array">
-                                    <item name="uiCollection" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/ui-collection</item>
-                                    <item name="group" xsi:type="string">Magento_Ui/js/form/components/group</item>
-                                    <item name="region" xsi:type="string">Magento_Ui/js/form/element/region</item>
-                                    <item name="postcode" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
-                                </item>
-                            </item>
                             <item name="mage/utils/strings" xsi:type="array">
                                 <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/strings</item>
                                 <item name="import" xsi:type="array">
@@ -120,11 +111,13 @@
                                     <item name="main" xsi:type="string">mage/utils/main</item>
                                 </item>
                             </item>
+                            <item name="Swissup_BreezeWebkulOrderByWhatsappBot/js/ui-collection" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/ui-collection</item>
+                            </item>
                             <item name="Magento_Ui/js/form/element/abstract" xsi:type="array">
                                 <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/element/abstract</item>
                                 <item name="import" xsi:type="array">
                                     <item name="mageUtils" xsi:type="string">mageUtils</item>
-                                    <item name="validator" xsi:type="string">Magento_Ui/js/lib/validation/validator</item>
                                     <item name="path" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
                                 </item>
                                 <item name="export" xsi:type="array">
@@ -168,6 +161,15 @@
                                 <item name="import" xsi:type="array">
                                     <item name="mageUtils" xsi:type="string">mageUtils</item>
                                     <item name="path" xsi:type="string">Magento_Ui/js/form/components/group</item>
+                                </item>
+                            </item>
+                            <item name="uiForm" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="uiCollection" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/ui-collection</item>
+                                    <item name="group" xsi:type="string">Magento_Ui/js/form/components/group</item>
+                                    <item name="region" xsi:type="string">Magento_Ui/js/form/element/region</item>
+                                    <item name="postcode" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
                                 </item>
                             </item>
                         </item>
