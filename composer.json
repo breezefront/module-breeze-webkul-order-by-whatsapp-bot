@@ -1,0 +1,19 @@
+{
+    "name": "swissup/module-breeze-webkul-order-by-whatsapp-bot",
+    "description": "",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "require": {
+        "swissup/module-breeze": "^2.17.9",
+        "webkul/module-orderby-whatsappbot": "^5.0.4"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Swissup\\BreezeWebkulOrderByWhatsappBot\\": ""
+        }
+    }
+}

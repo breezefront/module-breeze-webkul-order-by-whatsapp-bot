@@ -1,0 +1,23 @@
+& when (@critical) {
+    .breeze .whatsapp-button-div {
+        margin: 0;
+        max-width: none !important;
+        .wk_whatsapp {
+            line-height: inherit;
+            font-size: inherit;
+            .lib-css(padding, @button__padding);
+            &:extend(.product-info-wrapper .product-add-form .tocart); // argento force
+            &:extend(.product-info-wrapper .box-tocart .tocart); // argento stripes
+            &:extend(.box-tocart .fieldset .actions .tocart); // argento chic
+        }
+        .wk_whatsapp_icon {
+            display: flex;
+            align-items: center;
+            gap: @1;
+        }
+        .wk_whatsapp_icon::before,
+        .wk_whatsapp_icon_page::before {
+            font-size: @font-size__xl;
+        }
+    }
+}

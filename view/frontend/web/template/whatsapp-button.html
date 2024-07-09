@@ -1,0 +1,12 @@
+<button type="button" class="action primary wk_whatsapp" data-bind="
+    click: buyNow,
+    attr: {
+        title: buttonText
+    }
+">
+    <span class="wk_whatsapp_icon" data-bind="i18n: buttonText"></span>
+</button>
+<div id="opc-new-shipping-address" data-bind="visible: isFormPopUpVisible, template: {
+    name: shippingFormTemplate,
+    if: isFormPopUpVisible
+}"></div>

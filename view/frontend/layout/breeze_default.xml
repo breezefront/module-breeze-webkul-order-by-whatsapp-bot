@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="dynamic" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="Webkul_OrderByWhatsappBot/js/view/product-view-button" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/product-view-button</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="uiForm" xsi:type="string">uiForm</item>
+                                    <item name="confirm" xsi:type="string">confirm</item>
+                                    <item name="modal" xsi:type="string">modal</item>
+                                    <item name="alert" xsi:type="string">alert</item>
+                                    <item name="mage/url" xsi:type="string">mage/url</item>
+                                    <item name="pupupState" xsi:type="string">Magento_Checkout/js/model/shipping-address/form-popup-state</item>
+                                    <item name="customer" xsi:type="string">Magento_Customer/js/model/customer</item>
+                                    <item name="createShippingAddress" xsi:type="string">Magento_Checkout/js/action/create-shipping-address</item>
+                                    <item name="parent" xsi:type="string">Webkul_OrderByWhatsappBot/js/view/product-view-button</item>
+                                </item>
+                            </item>
+
+                            <item name="Magento_Customer/js/model/customer/address" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/customer-address</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="customerAddress" xsi:type="string">Magento_Customer/js/model/customer/address</item>
+                                </item>
+                                <item name="export" xsi:type="array">
+                                    <item name="0" xsi:type="string">./customer/address</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Customer/js/model/customer-addresses" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/customer-addresses</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="customerAddress" xsi:type="string">Magento_Customer/js/model/customer/address</item>
+                                    <item name="parent" xsi:type="string">Magento_Customer/js/model/customer-addresses</item>
+                                </item>
+                                <item name="export" xsi:type="array">
+                                    <item name="0" xsi:type="string">./customer-addresses</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Customer/js/model/address-list" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/address-list</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="customerAddresses" xsi:type="string">Magento_Customer/js/model/customer-addresses</item>
+                                    <item name="parent" xsi:type="string">Magento_Customer/js/model/address-list</item>
+                                </item>
+                                <item name="export" xsi:type="array">
+                                    <item name="0" xsi:type="string">./address-list</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Customer/js/model/customer" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_Customer/js/model/customer</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="addressList" xsi:type="string">Magento_Customer/js/model/address-list</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Checkout/js/model/address-converter" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/address-converter</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="newAddress" xsi:type="string">Magento_Checkout/js/model/new-customer-address</item>
+                                    <item name="mage/utils/objects" xsi:type="string">mage/utils/objects</item>
+                                    <item name="parent" xsi:type="string">Magento_Checkout/js/model/address-converter</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Checkout/js/action/create-shipping-address" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/create-shipping-address</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="addressList" xsi:type="string">Magento_Customer/js/model/address-list</item>
+                                    <item name="addressConverter" xsi:type="string">Magento_Checkout/js/model/address-converter</item>
+                                    <item name="parent" xsi:type="string">Magento_Checkout/js/action/create-shipping-address</item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="ui-form" xsi:type="array">
+                        <item name="sort_order" xsi:type="number">90</item>
+                        <item name="items" xsi:type="array">
+                            <item name="uiForm" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="uiCollection" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/ui-collection</item>
+                                    <item name="group" xsi:type="string">Magento_Ui/js/form/components/group</item>
+                                    <item name="region" xsi:type="string">Magento_Ui/js/form/element/region</item>
+                                    <item name="postcode" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                </item>
+                            </item>
+                            <item name="mage/utils/strings" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/strings</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">mage/utils/strings</item>
+                                </item>
+                            </item>
+                            <item name="mage/utils/objects" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/objects</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">mage/utils/objects</item>
+                                </item>
+                            </item>
+                            <item name="mage/utils/misc" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/misc</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">mage/utils/misc</item>
+                                </item>
+                            </item>
+                            <item name="mage/utils/template" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/template</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">mage/utils/template</item>
+                                </item>
+                            </item>
+                            <item name="mageUtils" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/utils/main</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="strings" xsi:type="string">mage/utils/strings</item>
+                                    <item name="misc" xsi:type="string">mage/utils/misc</item>
+                                    <item name="template" xsi:type="string">mage/utils/template</item>
+                                    <item name="main" xsi:type="string">mage/utils/main</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Ui/js/form/element/abstract" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/element/abstract</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="mageUtils" xsi:type="string">mageUtils</item>
+                                    <item name="validator" xsi:type="string">Magento_Ui/js/lib/validation/validator</item>
+                                    <item name="path" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                </item>
+                                <item name="export" xsi:type="array">
+                                    <item name="0" xsi:type="string">./abstract</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Ui/js/form/element/post-code" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/element/post-code</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="abstract" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                    <item name="postCode" xsi:type="string">Magento_Ui/js/form/element/post-code</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Ui/js/form/element/select" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/element/select</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="abstract" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                    <item name="mageUtils" xsi:type="string">mageUtils</item>
+                                    <item name="path" xsi:type="string">Magento_Ui/js/form/element/select</item>
+                                </item>
+                                <item name="export" xsi:type="array">
+                                    <item name="0" xsi:type="string">./select</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Checkout/js/model/default-post-code-resolver" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/default-post-code-resolver</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="postCodeResolver" xsi:type="string">Magento_Checkout/js/model/default-post-code-resolver</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Ui/js/form/element/region" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/element/region</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="postCodeResolver" xsi:type="string">Magento_Checkout/js/model/default-post-code-resolver</item>
+                                    <item name="select" xsi:type="string">Magento_Ui/js/form/element/select</item>
+                                    <item name="region" xsi:type="string">Magento_Ui/js/form/element/region</item>
+                                </item>
+                            </item>
+                            <item name="Magento_Ui/js/form/components/group" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/form/group</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="mageUtils" xsi:type="string">mageUtils</item>
+                                    <item name="path" xsi:type="string">Magento_Ui/js/form/components/group</item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="breeze.container">
+            <block class="Swissup\Breeze\Block\HtmlTemplate" template="Swissup_BreezeWebkulOrderByWhatsappBot::whatsapp-button.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">Webkul_OrderByWhatsappBot/whatsapp-button</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" template="Swissup_BreezeWebkulOrderByWhatsappBot::shipping-address/form.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">Webkul_OrderByWhatsappBot/shipping-address/form</argument>
+                </arguments>
+            </block>
+
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.ui_form_field" template="Swissup_BreezeWebkulOrderByWhatsappBot::ui/form/field.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">ui/form/field</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.ui_group_group" template="Swissup_BreezeWebkulOrderByWhatsappBot::ui/group/group.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">ui/group/group</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.ui_form_element_input" template="Magento_Ui::form/element/input.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">ui/form/element/input</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.ui_form_element_select" template="Magento_Ui::form/element/select.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">ui/form/element/select</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.ui_form_element_helper_tooltip" template="Swissup_BreezeWebkulOrderByWhatsappBot::ui/form/element/helper/tooltip.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">ui/form/element/helper/tooltip</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

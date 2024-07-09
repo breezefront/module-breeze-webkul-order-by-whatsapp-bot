@@ -1,0 +1,29 @@
+<!-- ko if: getAddressList().length >0  -->
+<form class="form form-shipping-address" id="wh-shipping-form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+    <h3 class="title" data-bind="i18n:'Provide the address to complete order on WhatsApp.'"></h3>
+    <p class="title" data-bind="i18n:'Select Saved Address.'"></p>
+    <select class="select" name="selectedAddress" id="selectedAddress" data-bind="event:{ change: addressChanged}">
+        <!-- ko foreach: getAddressList() -->
+            <option data-bind="text:$data[1].inlineaddress, value:$data[0].id"></option>
+        <!-- /ko  -->
+        <option value="newAddress">New Address</option>
+    </select>
+</form>
+<!-- /ko -->
+
+<form class="form form-shipping-address" id="co-shipping-form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+    <div id="shipping-new-address-form" class="fieldset address">
+        <!-- ko foreach: getRegion('additional-fieldsets') -->
+        <!-- ko template: getTemplate() -->
+        <!-- /ko -->
+        <!--/ko-->
+        <!-- ko if: (isCustomerLoggedIn) -->
+        <div class="field choice" data-bind="visible: isFormInline">
+            <input type="checkbox" class="checkbox" id="shipping-save-in-address-book" data-bind="checked: saveInAddressBook">
+            <label class="label" for="shipping-save-in-address-book">
+                <span data-bind="i18n:'Save in address book'">Save in address book</span>
+            </label>
+        </div>
+        <!-- /ko -->
+    </div>
+</form>
