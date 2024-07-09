@@ -1,6 +1,6 @@
 {
     "name": "swissup/module-breeze-webkul-order-by-whatsapp-bot",
-    "description": "",
+    "description": "WebkulOrderByWhatsapp integration",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": "OSL-3.0",
