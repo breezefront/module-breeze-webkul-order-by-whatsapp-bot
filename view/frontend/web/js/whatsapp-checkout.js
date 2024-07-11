@@ -3,7 +3,7 @@ define([
 ], function ($) {
     'use strict';
 
-    $.mixin('Webkul_OrderByWhatsappBot/js/view/whatsapp-checkout', {
+    $.mixin('Webkul_OrderByWhatsappBot/js/view/cart/whatsapp-checkout', {
         // turbo compatibility
         destroy: function (parent) {
             this.isFormPopUpVisible(false);
