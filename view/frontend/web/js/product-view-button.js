@@ -7,6 +7,7 @@ define([
         // turbo compatibility
         destroy: function (parent) {
             this.isFormPopUpVisible(false);
+            this.isFormPopUpVisibleSubscriber?.dispose();
             this.popUp?.destroy();
             parent();
         },
