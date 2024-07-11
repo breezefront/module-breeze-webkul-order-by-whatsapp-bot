@@ -92,3 +92,45 @@ bin/magento module:enable Swissup_BreezeWebkulOrderByWhatsappBot
 +            return this.popUp;
          },
 ```
+
+`Webkul/OrderByWhatsappBot/view/frontend/web/js/view/cart/whatsapp-checkout.js`
+
+```diff
+@@ -26,6 +26,7 @@
+     var popUp = null;
+     return Component.extend({
+         defaults: {
++            popUp: null,
+             template: 'Webkul_OrderByWhatsappBot/whatsapp-cart-page',
+             shippingFormTemplate: 'Webkul_OrderByWhatsappBot/shipping-address/form',
+             buttonText: $t('Buy Now'),
+@@ -53,7 +54,7 @@
+             var self = this;
+             this._super();
+
+-            this.isFormPopUpVisible.subscribe(function(value) {
++            this.isFormPopUpVisibleSubscriber = this.isFormPopUpVisible.subscribe(function(value) {
+                 if (value) {
+                     self.getPopUp().openModal();
+                 }
+@@ -136,7 +137,7 @@
+             var self = this,
+                 buttons;
+
+-            if (!popUp) {
++            if (!this.popUp) {
+                 buttons = this.popUpForm.options.buttons;
+                 this.popUpForm.options.buttons = [{
+                         text: buttons.save.text ? buttons.save.text : $t('Save Address'),
+@@ -159,10 +160,10 @@
+                 this.popUpForm.options.keyEventHandlers = {
+                     escapeKey: this.onClosePopUp.bind(this)
+                 };
+-                popUp = modal(this.popUpForm.options, $(this.popUpForm.element));
++                this.popUp = modal(this.popUpForm.options, $(this.popUpForm.element));
+             }
+
+-            return popUp;
++            return this.popUp;
+         },
+```

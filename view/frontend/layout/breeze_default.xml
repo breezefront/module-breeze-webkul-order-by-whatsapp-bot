@@ -43,6 +43,22 @@
                             </item>
                             -->
 
+                            <item name="Webkul_OrderByWhatsappBot/js/view/cart/whatsapp-checkout" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/whatsapp-checkout</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="uiForm" xsi:type="string">uiForm</item>
+                                    <item name="confirm" xsi:type="string">confirm</item>
+                                    <item name="modal" xsi:type="string">modal</item>
+                                    <item name="alert" xsi:type="string">alert</item>
+                                    <item name="mage/url" xsi:type="string">mage/url</item>
+                                    <item name="pupupState" xsi:type="string">Magento_Checkout/js/model/shipping-address/form-popup-state</item>
+                                    <item name="customer" xsi:type="string">Magento_Customer/js/model/customer</item>
+                                    <item name="createShippingAddress" xsi:type="string">Magento_Checkout/js/action/create-shipping-address</item>
+                                    <item name="parent" xsi:type="string">Webkul_OrderByWhatsappBot/js/view/cart/whatsapp-checkout</item>
+                                </item>
+                            </item>
+
+
                             <item name="Magento_Customer/js/model/customer/address" xsi:type="array">
                                 <item name="path" xsi:type="string">Swissup_BreezeWebkulOrderByWhatsappBot/js/checkout/customer-address</item>
                                 <item name="import" xsi:type="array">
@@ -199,6 +215,11 @@
             <block class="Swissup\Breeze\Block\HtmlTemplate" template="Swissup_BreezeWebkulOrderByWhatsappBot::whatsapp-button.html">
                 <arguments>
                     <argument name="id" xsi:type="string">Webkul_OrderByWhatsappBot/whatsapp-button</argument>
+                </arguments>
+            </block>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" template="Swissup_BreezeWebkulOrderByWhatsappBot::whatsapp-cart-page.html">
+                <arguments>
+                    <argument name="id" xsi:type="string">Webkul_OrderByWhatsappBot/whatsapp-cart-page</argument>
                 </arguments>
             </block>
             <block class="Swissup\Breeze\Block\HtmlTemplate" template="Swissup_BreezeWebkulOrderByWhatsappBot::shipping-address/form.html">

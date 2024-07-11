@@ -17,7 +17,9 @@
         <!-- ko template: getTemplate() -->
         <!-- /ko -->
         <!--/ko-->
-        <!-- ko if: (isCustomerLoggedIn) -->
+
+        <!-- false added to fix "saveInAddressBook is not defined". Same bug in Luma. -->
+        <!-- ko if: (false && isCustomerLoggedIn) -->
         <div class="field choice" data-bind="visible: isFormInline">
             <input type="checkbox" class="checkbox" id="shipping-save-in-address-book" data-bind="checked: saveInAddressBook">
             <label class="label" for="shipping-save-in-address-book">
