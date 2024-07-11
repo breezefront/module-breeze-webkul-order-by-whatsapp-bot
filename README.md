@@ -1,5 +1,7 @@
 # Webkul_OrderByWhatsappBot integration
 
+Tested with Webkul_OrderByWhatsappBot 5.0.4
+
 ## Installation
 
 ```bash
