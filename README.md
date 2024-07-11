@@ -47,6 +47,7 @@ bin/magento module:enable Swissup_BreezeWebkulOrderByWhatsappBot
          },
 ```
 
+<!--
 `Webkul/OrderByWhatsappBot/view/frontend/web/js/view/whatsapp-category-page.js`
 
 ```diff
@@ -92,6 +93,7 @@ bin/magento module:enable Swissup_BreezeWebkulOrderByWhatsappBot
 +            return this.popUp;
          },
 ```
+-->
 
 `Webkul/OrderByWhatsappBot/view/frontend/web/js/view/cart/whatsapp-checkout.js`
 
